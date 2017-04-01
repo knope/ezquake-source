@@ -369,6 +369,7 @@ int COM_GetUniqueTempFilename (char *path, char *filename, int filename_size, qb
 	char *tmp;
 
 	// TODO: I'm no unix person, is this proper? -Nope. Fixme
+	// woooo a purpose... im going to fail hard :) http://man7.org/linux/man-pages/man3/mkstemp.3.html
 	tmp = tempnam(path, "ezq");
 	if (!tmp)
 		return -1;
